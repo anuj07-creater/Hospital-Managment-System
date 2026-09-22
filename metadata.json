@@ -1,0 +1,6 @@
+{
+  "name": "Raut Hospital Management System",
+  "description": "Full-stack MERN Hospital Management System (RHMS) featuring role-based authorization for Admin, Doctor, Receptionist, and Patient, appointment scheduling, and clinical records.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
