@@ -1,6 +1,6 @@
 # 🏥 Raut Hospital Management System (RHMS)
 
-A full-stack hospital management web application designed to streamline patient registration, doctor management, appointments, authentication, and role-based hospital workflows.
+A full-stack hospital management web application designed to streamline patient registration, doctor management, appointment scheduling, authentication, and role-based hospital workflows.
 
 🔗 **Live Demo:** https://hospital-managment-system-t5q1.onrender.com  
 🔗 **GitHub:** https://github.com/anuj07-creater/Hospital-Managment-System
@@ -9,9 +9,9 @@ A full-stack hospital management web application designed to streamline patient 
 
 ## 📌 Overview
 
-**Raut Hospital Management System (RHMS)** is a full-stack web application built to demonstrate how a real-world healthcare management platform can handle multiple user roles, secure authentication, appointment scheduling, and centralized data management.
+**Raut Hospital Management System (RHMS)** is a full-stack web application developed to demonstrate how a real-world healthcare management platform can handle multiple user roles, secure authentication, appointment scheduling, and centralized data management.
 
-The system provides separate workflows for:
+The system provides dedicated workflows for:
 
 - 👨‍💼 Administrator
 - 👨‍⚕️ Doctor
@@ -30,9 +30,9 @@ The backend performs the final availability check to prevent **double booking of
 
 - JWT-based authentication
 - Password hashing using bcryptjs
-- Protected routes
+- Protected frontend routes
 - Role-Based Access Control (RBAC)
-- Separate access permissions for Admin, Doctor, Receptionist, and Patient
+- Separate permissions for Admin, Doctor, Receptionist, and Patient
 - Secure environment-variable based configuration
 
 ### 📅 Unified Appointment Management
@@ -49,7 +49,7 @@ The backend performs the final availability check to prevent **double booking of
 ### 👨‍⚕️ Doctor Management
 
 - Doctor profiles
-- Specialization
+- Doctor specialization
 - Consultation information
 - Doctor availability
 - Appointment management
@@ -64,9 +64,9 @@ The backend performs the final availability check to prevent **double booking of
 
 ### 👤 Patient Workflow
 
-- Patient registration/login
+- Patient registration and login
 - Browse available doctors
-- Book appointments online
+- Online appointment booking
 - View appointment information
 - Access personal healthcare information
 
@@ -89,9 +89,11 @@ Dedicated dashboard experiences for:
                             ▼
                  ┌─────────────────────┐
                  │   React Frontend    │
+                 │                     │
                  │ React Router        │
                  │ Tailwind CSS        │
                  │ Axios               │
+                 │ Role-Based Views    │
                  └──────────┬──────────┘
                             │
                        REST API
@@ -120,23 +122,4 @@ Dedicated dashboard experiences for:
                  │ Prescriptions       │
                  │ Medical Records     │
                  └─────────────────────┘
-## 🛠️ Tech Stack
 
-**Frontend:** React 19, TypeScript, React Router, Tailwind CSS, Axios, Recharts, Lucide React
-
-**Backend:** Node.js, Express.js, REST APIs, JWT, bcryptjs
-
-**Database:** MongoDB Atlas, Mongoose
-
-**Tools & Deployment:** Vite, Git, GitHub, Render
-
-## 🧪 Demo Credentials
-
-| Role | Email | Password |
-|------|-------|----------|
-| Admin | `admin@raut-hospital.org` | `admin123` |
-| Doctor | `dr.sarah@raut-hospital.org` | `doctor123` |
-| Receptionist | `reception@raut-hospital.org` | `reception123` |
-| Patient | `patient.rahul@gmail.com` | `patient123` |
-
-> These credentials are provided for demonstration purposes only.
