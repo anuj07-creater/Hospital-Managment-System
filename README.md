@@ -120,3 +120,23 @@ Dedicated dashboard experiences for:
                  │ Prescriptions       │
                  │ Medical Records     │
                  └─────────────────────┘
+## 🛠️ Tech Stack
+
+**Frontend:** React 19, TypeScript, React Router, Tailwind CSS, Axios, Recharts, Lucide React
+
+**Backend:** Node.js, Express.js, REST APIs, JWT, bcryptjs
+
+**Database:** MongoDB Atlas, Mongoose
+
+**Tools & Deployment:** Vite, Git, GitHub, Render
+
+## 🧪 Demo Credentials
+
+| Role | Email | Password |
+|------|-------|----------|
+| Admin | `admin@raut-hospital.org` | `admin123` |
+| Doctor | `dr.sarah@raut-hospital.org` | `doctor123` |
+| Receptionist | `reception@raut-hospital.org` | `reception123` |
+| Patient | `patient.rahul@gmail.com` | `patient123` |
+
+> These credentials are provided for demonstration purposes only.
