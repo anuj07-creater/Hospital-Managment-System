@@ -81,6 +81,52 @@ Dedicated dashboard experiences for:
 
 ---
 
+## 📸 Screenshots
+
+### Admin Dashboard
+![Admin Dashboard](screenshots/admin-dashboard.png)
+
+### Doctor Dashboard
+![Doctor Dashboard](screenshots/doctor-dashboard.png)
+
+### Patient Appointment Booking
+![Appointment Booking](screenshots/appointment-booking.png)
+
+### Receptionist Dashboard
+![Receptionist Dashboard](screenshots/receptionist-dashboard.png)
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React.js
+- TypeScript
+- React Router
+- Tailwind CSS
+- Axios
+- Recharts
+- Lucide React
+
+### Backend
+- Node.js
+- Express.js
+- REST APIs
+- JWT
+- bcryptjs
+
+### Database
+- MongoDB Atlas
+- Mongoose
+
+### Development & Deployment
+- Vite
+- Git
+- GitHub
+- Render
+
+---
+
 ## 🏗️ System Architecture
 
 ```text
@@ -123,3 +169,35 @@ Dedicated dashboard experiences for:
                  │ Medical Records     │
                  └─────────────────────┘
 
+---
+
+## 🧠 Key Engineering Logic
+
+### Unified Appointment Scheduling
+
+Both online patient bookings and offline receptionist bookings use the same appointment availability system.
+
+```text
+Patient Online Booking
+          │
+          ▼
+      REST API
+          │
+          ▼
+ Check Doctor Availability
+          │
+          ├── Slot Available → Create Appointment
+          │
+          └── Slot Taken → Reject Booking
+          
+Receptionist Offline Booking
+          │
+          ▼
+      REST API
+          │
+          ▼
+ Check Doctor Availability
+          │
+          ├── Slot Available → Create Appointment
+          │
+          └── Slot Taken → Reject Booking
