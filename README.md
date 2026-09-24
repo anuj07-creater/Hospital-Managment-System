@@ -84,15 +84,19 @@ Dedicated dashboard experiences for:
 ## 📸 Screenshots
 
 ### Admin Dashboard
+
 ![Admin Dashboard](screenshots/admin-dashboard.png)
 
 ### Doctor Dashboard
+
 ![Doctor Dashboard](screenshots/doctor-dashboard.png)
 
 ### Patient Appointment Booking
+
 ![Appointment Booking](screenshots/appointment-booking.png)
 
 ### Receptionist Dashboard
+
 ![Receptionist Dashboard](screenshots/receptionist-dashboard.png)
 
 ---
@@ -100,6 +104,7 @@ Dedicated dashboard experiences for:
 ## 🛠️ Tech Stack
 
 ### Frontend
+
 - React.js
 - TypeScript
 - React Router
@@ -109,6 +114,7 @@ Dedicated dashboard experiences for:
 - Lucide React
 
 ### Backend
+
 - Node.js
 - Express.js
 - REST APIs
@@ -116,10 +122,12 @@ Dedicated dashboard experiences for:
 - bcryptjs
 
 ### Database
+
 - MongoDB Atlas
 - Mongoose
 
 ### Development & Deployment
+
 - Vite
 - Git
 - GitHub
@@ -168,134 +176,3 @@ Dedicated dashboard experiences for:
                  │ Prescriptions       │
                  │ Medical Records     │
                  └─────────────────────┘
-
----
-
-## 🧠 Key Engineering Logic
-
-### Unified Appointment Scheduling
-
-Both online patient bookings and offline receptionist bookings use the same appointment availability system.
-
-```text
-Patient Online Booking
-          │
-          ▼
-      REST API
-          │
-          ▼
- Check Doctor Availability
-          │
-          ├── Slot Available → Create Appointment
-          │
-          └── Slot Taken → Reject Booking
-          
-Receptionist Offline Booking
-          │
-          ▼
-      REST API
-          │
-          ▼
- Check Doctor Availability
-          │
-          ├── Slot Available → Create Appointment
-          │
-          └── Slot Taken → Reject Booking
-
----
-
-## 📁 Project Structure
-
-```text
-Hospital-Managment-System/
-├── server/
-│   ├── config/
-│   ├── constants/
-│   ├── controllers/
-│   ├── middleware/
-│   ├── models/
-│   ├── routes/
-│   ├── services/
-│   └── utils/
-│
-├── src/
-│   ├── components/
-│   ├── constants/
-│   ├── context/
-│   ├── pages/
-│   ├── services/
-│   ├── types/
-│   ├── App.tsx
-│   ├── index.css
-│   └── main.tsx
-│
-├── .env.example
-├── .gitignore
-├── README.md
-├── bun.lock
-├── index.html
-├── metadata.json
-├── package.json
-├── server.ts
-├── tsconfig.json
-└── vite.config.ts
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-Make sure the following are installed before running RHMS locally:
-
-- [Node.js](https://nodejs.org/) (LTS recommended)
-- npm (included with Node.js)
-- [Git](https://git-scm.com/)
-- MongoDB Atlas account or a local MongoDB instance
-
-### Installation
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/anuj07-creater/Hospital-Managment-System.git
-
-2. Navigate to the project directory:
-
-cd Hospital-Managment-System
-
-3. Install the project dependencies:
-
-npm install --legacy-peer-deps
-
-###Environment Variables
-
-Create a .env file in the project root directory.
-
-Use the provided .env.example file as a reference and configure the following variables:
-
-PORT=3000
-NODE_ENV=development
-
-MONGODB_URI=your_mongodb_connection_string
-
-JWT_SECRET=your_secure_jwt_secret
-JWT_EXPIRE=7d
-
-GEMINI_API_KEY=
-APP_URL=http://localhost:3000
-
-###Running Locally
-
-Start the development server:
-npm run dev
-
-Once the server starts, open:
-http://localhost:3000
-
-##Production Build
-
-To create a production build:
-npm run build
-
-To start the production server:
-npm start
