@@ -177,6 +177,7 @@ Dedicated dashboard experiences for:
                  │ Medical Records     │
                  └─────────────────────┘
 ```
+---
 
 ## 🧠 Key Engineering Logic
 
@@ -209,6 +210,7 @@ Receptionist Offline Booking
           │
           └── Slot Taken → Reject Booking
 ```
+---
 
 ## 📁 Project Structure
 ```text
@@ -245,6 +247,7 @@ Hospital-Managment-System/
 ├── tsconfig.json
 └── vite.config.ts
 ```
+---
 
 ## 🚀 Getting Started
 
@@ -312,3 +315,75 @@ To start the production server:
 ```text
 npm start
 ```
+---
+
+## 🔑 Demo Credentials
+
+The following demo accounts can be used to explore the different role-based workflows of RHMS:
+
+| Role | Email | Password |
+|---|---|---|
+| Admin | `admin@raut-hospital.org` | `admin123` |
+| Doctor | `dr.sarah@raut-hospital.org` | `doctor123` |
+| Receptionist | `reception@raut-hospital.org` | `reception123` |
+| Patient | `patient.rahul@gmail.com` | `patient123` |
+
+> **Note:** These credentials are provided for demonstration purposes only. Do not use real patient information or sensitive credentials in the application.
+
+---
+
+## 🚀 Deployment
+
+The application is deployed using:
+
+- **Frontend & Backend:** Render
+- **Database:** MongoDB Atlas
+- **Source Control:** GitHub
+
+🔗 **Live Application:** https://hospital-managment-system-t5q1.onrender.com
+
+---
+
+## 🔐 Security & Limitations
+
+### Security
+
+- JWT-based authentication
+- Password hashing using bcryptjs
+- Role-Based Access Control (RBAC)
+- Protected API routes
+- Environment variables used for sensitive configuration
+- Backend validation for appointment availability
+- Prevention of duplicate appointment bookings
+
+### Limitations
+
+- RHMS is a portfolio project demonstrating full-stack application development and healthcare workflow concepts.
+- Production deployment would require additional healthcare-specific security, compliance, monitoring, scalability, and data-protection measures.
+- Demo credentials are provided for application testing.
+
+  ---
+
+## 🔮 Future Improvements
+
+- Email and SMS appointment notifications
+- Online payment integration
+- Digital prescription and medical report uploads
+- Advanced analytics and reporting
+- Doctor availability calendar
+- Appointment reminders
+- Cloud-based file storage
+- Improved audit logging and monitoring
+
+---
+
+## 👨‍💻 Author
+
+**Anuj Raut**
+
+B.E. Information Technology  
+Dr. D. Y. Patil College of Engineering, Akurdi, Pune
+
+- GitHub: https://github.com/anuj07-creater
+- LinkedIn: https://www.linkedin.com/in/anuj-raut-44090a27
+- Email: anujraut48@gmail.com
