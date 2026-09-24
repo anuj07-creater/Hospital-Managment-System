@@ -176,7 +176,8 @@ Dedicated dashboard experiences for:
                  │ Prescriptions       │
                  │ Medical Records     │
                  └─────────────────────┘
-🧠 Key Engineering Logic
+```
+###🧠 Key Engineering Logic
 Unified Appointment Scheduling
 
 Both online patient bookings and offline receptionist bookings use the same appointment availability system.
