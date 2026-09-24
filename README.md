@@ -255,10 +255,10 @@ Hospital-Managment-System/
 
 Make sure the following are installed before running RHMS locally:
 
--Node.js (LTS recommended)
--npm (included with Node.js)
--Git
--MongoDB Atlas account or a local MongoDB instance
+- Node.js (LTS recommended)
+- npm (included with Node.js)
+- Git
+- MongoDB Atlas account or a local MongoDB instance
 
 ### Installation
 
