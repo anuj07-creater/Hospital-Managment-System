@@ -177,11 +177,14 @@ Dedicated dashboard experiences for:
                  │ Medical Records     │
                  └─────────────────────┘
 ```
-###🧠 Key Engineering Logic
-Unified Appointment Scheduling
+
+## 🧠 Key Engineering Logic
+
+### Unified Appointment Scheduling
 
 Both online patient bookings and offline receptionist bookings use the same appointment availability system.
 
+```text
 Patient Online Booking
           │
           ▼
@@ -205,7 +208,9 @@ Receptionist Offline Booking
           ├── Slot Available → Create Appointment
           │
           └── Slot Taken → Reject Booking
-📁 Project Structure
+```
+
+##📁 Project Structure
 Hospital-Managment-System/
 ├── server/
 │   ├── config/
