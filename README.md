@@ -210,7 +210,8 @@ Receptionist Offline Booking
           └── Slot Taken → Reject Booking
 ```
 
-##📁 Project Structure
+## 📁 Project Structure
+```text
 Hospital-Managment-System/
 ├── server/
 │   ├── config/
@@ -243,8 +244,11 @@ Hospital-Managment-System/
 ├── server.ts
 ├── tsconfig.json
 └── vite.config.ts
-🚀 Getting Started
-Prerequisites
+```
+
+## 🚀 Getting Started
+
+### Prerequisites
 
 Make sure the following are installed before running RHMS locally:
 
@@ -252,19 +256,28 @@ Node.js (LTS recommended)
 npm (included with Node.js)
 Git
 MongoDB Atlas account or a local MongoDB instance
-Installation
-Clone the repository:
+
+### Installation
+
+1.Clone the repository:
+```text
 git clone https://github.com/anuj07-creater/Hospital-Managment-System.git
-Navigate to the project directory:
+```
+2.Navigate to the project directory:
+```text
 cd Hospital-Managment-System
-Install the project dependencies:
+```
+3.Install the project dependencies:
+```text
 npm install --legacy-peer-deps
-Environment Variables
+```
+
+### Environment Variables
 
 Create a .env file in the project root directory.
 
 Use the provided .env.example file as a reference and configure the following variables:
-
+```text
 PORT=3000
 NODE_ENV=development
 
@@ -275,21 +288,27 @@ JWT_EXPIRE=7d
 
 GEMINI_API_KEY=
 APP_URL=http://localhost:3000
-Running Locally
+```
+
+### Running Locally
 
 Start the development server:
-
+```text
 npm run dev
-
+```
 Once the server starts, open:
-
+```text
 http://localhost:3000
-Production Build
+```
+
+### Production Build
 
 To create a production build:
-
+```text
 npm run build
+```
 
 To start the production server:
-
+```text
 npm start
+```
